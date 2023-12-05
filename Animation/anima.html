@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Animation, o que é??</title>
+
+    <style>
+        body{
+            background: #000;
+        }
+        
+        h1{
+            margin-bottom: 45px;
+            margin-top: 335px;
+        }
+
+        .conteudo{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            align-items: end;
+            justify-content: left;
+            display: flex;
+            width: 300px;
+        }
+        .conteudo-cor{
+            color: #5755f1;
+        }
+
+        .box-animation{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+            animation-name: Colore;
+            animation-duration: 5s;
+            /* animation-delay: 3.5s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes Colore {
+            0%
+                {background-color: red;
+                border-radius: 0%;
+                left: 0px;
+                top: 0px;}
+            20%
+                {background-color: orange;
+                border-radius: 100%;}
+            40%
+                {background-color: yellow;
+                border-radius: 0%;}
+            50%
+                {background-color: green;
+                border-radius: 100%;}
+            85%
+                {background-color: blue;
+                border-radius: 0%;}
+            100%
+                {background-color: violet;
+                border-radius: 100%;
+                left: 1200px;
+                top: 400px;}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        PIXEL
+    </header>
+
+        <div class="box-animation"><img src="img/dvd-video.svg" alt="dvd" width="500px"></div>
+
+        <h1 class="conteudo conteudo-cor">COMO USAR O ANIMATION</h1>
+        <span>
+        <p class="conteudo conteudo-cor">
+            .box-animation{ <br>
+            width: 300px;<br>
+            height: 300px;<br>
+            position: relative;<br>
+        }<br>
+        </p>
+                <p class="conteudo">
+                    Na class box-animation eu determinei um tamanho, e altura e determinei que a posição da DIV seria RELATIVE para 
+                    altera a posição do elemento . 
+                </p> <br>
+        <p class="conteudo conteudo-cor">
+            @keyframes Colore {<br>
+                from<br>
+                    {background-color: blue;<br>
+                    border-radius: 0%;<br>
+                    left: 0px;<br>
+                    top: 0px;}<br>
+                to<br>
+                    {background-color: orange;<br>
+                    border-radius: 100%;}<br>
+                    top: 200px;<br>
+                    top:200px;}<br>
+        </p>
+                <p class="conteudo">
+                    Abri uma KEYFRAME para preparar minha animação inseri uma cor inicial, curvatura inicial da div, e determinei
+                    um posicionamento incial usando um LEFT e um TOP.
+                    <br> e também inseri uma cor final, curvatura final da div, e determinei
+                    um posicionamento final usando um LEFT e um TOP.
+                </p><br>
+                
+                <p class="conteudo conteudo-cor">
+                    .box-animation{ <br>
+                    width: 300px;<br>
+                    height: 300px;<br>
+                    position: relative;<br>
+                    animation-name: anima;<br>
+                    animation-duration: 5s;<br>
+                    animation-delay: 3.5s;<br>
+                    animation-iteration-count: infinite;<br>
+                    animation-direction: alternate;<br>
+                }<br>
+                </p>
+                <p class="conteudo">
+                    Na minha class chamei a KEYFRAME, determinei um tempo de execução da minha animação e um tempo de delay, determinei 
+                    que minha animação irá de repetir em loop usando o INFINITE e que irá voltar ao inicio usando um ALTERNATE.
+                </p>
+</body>
+</html>

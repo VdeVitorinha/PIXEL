@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total eclipse of the href</title>
+    <link rel="icon" href="img/eclipse-11-logo-png-transparent.png" type="png">
+    <link rel="stylesheet" href="css/style.css">
+    
+        <style>
+            body {
+        background-color: #2a2051;
+        animation: aNoite  10s infinite 1.5s;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .content {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sol {
+        background-color: #fcd25b;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        border: 3px solid #fcd25b;
+        overflow: hidden;
+        animation: dayToNight2 10s infinite 1.5s;
+        top: 5%;
+        left: 50%;
+    }
+
+    .degrade{
+        position: absolute;
+        background-color: white;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        animation: Shadow 10s infinite 1.5s;
+    }
+
+    .lua {
+        background-color: #2a2051;
+        height: 520px;
+        width: 520px;
+        border-radius: 50%;
+        border: 10px solid white;
+        overflow: hidden;
+        margin-top: -20px;
+        left: 0px;
+        animation: movelua 10s infinite 1.5s;
+    }
+
+    .listra1{
+        position: absolute;
+        background-color: white;
+        width: 530px;
+        height: 45px;
+        margin-left: 0px;
+        margin-top: 35%;
+    }
+
+    .listra2{
+        position: absolute;
+        background-color: white;
+        width: 530px;
+        height: 45px;
+        margin-left: 0px;
+        margin-top: 50%;
+    }
+
+    .listra3{
+        position: absolute;
+        background-color: white;
+        width: 530px;
+        height: 45px;
+        margin-left: 0px;
+        margin-top: 65%;
+    }
+
+    .sombra{
+        background-image: linear-gradient( to top, #473788,#2a2051);
+        height: 380px;
+        width: 380px;
+        border-radius: 50%;
+        left: 27%;
+        overflow: hidden;
+        margin-left: 70px;
+        margin-top: 15%;
+        
+    }
+
+    @keyframes movelua{
+        0%{
+            transform: translateX(550px);
+            
+        }
+        50%{
+            transform: translateX(40px);
+            ;
+        }
+        100%{
+            transform: translateX(-570px);
+            
+        }
+    }
+
+    @keyframes Shadow {
+        0%{
+            background-color: white;
+        }
+        50%{
+            background-color:#ffffff00;
+        }
+        100%{
+            background-color: white;
+        }
+    }
+
+    @keyframes aNoite {
+        0%{
+            background-color: white;
+        }
+        50%{
+            background-color: #2a2051;
+        }
+        100%{
+            background-color: white;
+        }
+    }
+        </style>
+
+</head>
+<body>
+    <header>
+        PIXEL
+    </header>
+    
+    <a href="https://www.youtube.com/watch?v=lcOxhH8N3Bo">
+    <div class="content">
+        <div class="sol">            
+            <div class="lua">
+                <div class="listra1"></div>
+                <div class="listra2"></div>
+                <div class="listra3"></div>
+                <div class="sombra"></div>
+            </div>
+                </div><div class="degrade"></div>
+        </div>
+    </div>
+    </a>
+</body>
+</html>
